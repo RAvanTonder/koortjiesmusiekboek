@@ -8,6 +8,55 @@ xmlns="http://www.w3.org/TR/REC-html40">
 <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
 <meta name=ProgId content=Excel.Sheet>
 <meta name=Generator content="Microsoft Excel 15">
+ <!-- Step 1: Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Step 2: CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    /* Make the table fit any screen */
+    table {
+      width: 100% !important;
+      border-collapse: collapse;
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+      word-wrap: break-word;
+      white-space: normal !important;
+    }
+
+    /* Wrapper in case table is too wide */
+    .excel-wrapper {
+      overflow-x: auto;
+      max-width: 100%;
+    }
+
+    /* Tablet adjustments */
+    @media (max-width: 768px) {
+      table {
+        font-size: 14px;
+      }
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 480px) {
+      table {
+        font-size: 12px;
+      }
+      td, th {
+        display: block;   /* stack table cells */
+        width: 100% !important;
+      }
+    }
+  </style>
 <link rel=File-List href="index_files/filelist.xml">
 <![if !supportTabStrip]>
 <link id="shLink" href="index_files/sheet001.html">
@@ -36,8 +85,8 @@ xmlns="http://www.w3.org/TR/REC-html40">
 
  var c_rgszSh=new Array(c_lTabs);
  c_rgszSh[0] = "Indeks";
- c_rgszSh[1] = "LICK Koortjie Boek";
- c_rgszSh[2] = "Halleluja Liedere";
+ c_rgszSh[1] = "LICKÂ KoortjieÂ Boek";
+ c_rgszSh[2] = "HallelujaÂ Liedere";
  c_rgszSh[3] = "Bonus";
  c_rgszSh[4] = "Aanbidding";
  c_rgszSh[5] = "Begrafnis";
@@ -420,3 +469,4 @@ function fnSetActiveSheet(iSh)
  </noframes>
 </frameset>
 </html>
+
